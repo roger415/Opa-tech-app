@@ -3,117 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OPA.TECH Innovation - Soutenez l'économie locale avec des produits de qualité.">
+    <meta name="description" content="OPA.TECH Innovation - Produits locaux de qualité">
     <title>OPA.TECH Innovation</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #F0F2F5;
-            color: #1A1A1A;
-        }
-        
-        /* Barre de navigation */
-        .navbar {
-            background-color: #FFFFFF;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .navbar .logo .red {
-            color: #D72638;
-        }
-
-        .navbar .logo .yellow {
-            color: #FFC72C;
-        }
-
-        .navbar nav a {
-            margin-left: 15px;
-            text-decoration: none;
-            color: #1A1A1A;
-            font-weight: 500;
-        }
-
-        /* Section centrale */
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 80vh;
-            text-align: center;
-        }
-
-        .main-content img {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-
-        .main-content h1 {
-            font-size: 32px;
-        }
-
-        .main-content h1 .red {
-            color: #D72638;
-        }
-
-        .main-content h1 .yellow {
-            color: #FFC72C;
-        }
-
-        .main-content p {
-            font-size: 18px;
-            color: #2BA84A;
-            margin-bottom: 20px;
-        }
-
-        .main-content button {
-            background-color: #FFC72C;
-            color: #1A1A1A;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .main-content button:hover {
-            background-color: #E5AC1E;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="navbar">
-        <div class="logo">
-            <span class="red">OPA.TECH</span> <span class="yellow">innovation</span>
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="OPA.TECH Logo" class="logo">
         </div>
-        <nav>
+        <nav class="navbar">
             <a href="#">Accueil</a>
             <a href="#">Connexion</a>
             <a href="#">Inscription</a>
         </nav>
-    </div>
+    </header>
 
-    <div class="main-content">
-        <img src="logo.png" alt="Logo OPA.TECH Innovation"> <!-- Remplace "logo.png" par l'URL de ton logo -->
-        <h1>
-            Bienvenue sur <span class="red">OPA.TECH</span> <span class="yellow">innovation</span>
-        </h1>
-        <p>Soutenez l'économie locale avec des produits de qualité.</p>
-        <button>Commencer</button>
-    </div>
+    <main class="main-content">
+        <h1 class="welcome-text">Bienvenue sur <span class="highlight">OPA.TECH</span> <span class="highlight-yellow">innovation</span></h1>
+        <p class="subtitle">Soutenez l'économie locale avec des produits de qualité.</p>
+        <button class="start-button">Commencer</button>
+    </main>
 
+    <footer class="footer">
+        © 2025 OPA.TECH Innovation - Tous droits réservés.
+    </footer>
 </body>
 </html>
