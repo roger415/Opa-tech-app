@@ -25,26 +25,44 @@ body {
 }
 
 .logo {
-    width: 120px; /* Taille plus grande du logo */
+    width: 150px; /* Logo plus grand */
     height: auto;
 }
 
-.navbar a {
-    margin-left: 15px;
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    padding: 8px 15px;
+    background-color: #FFFFFF;
+    border: 2px solid #D72638;
+    color: #D72638;
+    font-weight: bold;
+    border-radius: 25px;
     text-decoration: none;
-    color: #1A1A1A;
-    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #D72638;
+    color: #FFFFFF;
 }
 
 .main-content {
     text-align: center;
     margin-top: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .welcome-text {
     font-size: 32px;
     font-weight: 700;
-    color: #D72638; /* Rouge vif */
+    color: #D72638; /* Rouge vif pour "Bienvenue" */
 }
 
 .highlight {
@@ -58,15 +76,15 @@ body {
 .subtitle {
     font-size: 18px;
     margin-top: 10px;
-    color: #FFFFFF;
+    color: #1A1A1A;
 }
 
 .start-button {
     background: linear-gradient(135deg, #FFC72C, #FFD700);
     color: #1A1A1A;
     border: none;
-    padding: 12px 25px;
-    font-size: 16px;
+    padding: 15px 30px; /* Bouton plus grand */
+    font-size: 18px;
     border-radius: 25px;
     margin-top: 20px;
     cursor: pointer;
