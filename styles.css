@@ -1,53 +1,51 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  color: #1A1A1A;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
 }
 
-header {
-  background-color: #D72638;
-  padding: 2rem;
-  color: #FFFFFF;
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
-  max-width: 150px;
-  margin-bottom: 1rem;
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
 }
 
-.gallery {
-  padding: 2rem;
+h1 {
+    color: #D72638; /* Couleur rouge vif du logo */
+    font-size: 24px;
 }
 
-.gallery h2 {
-  color: #2BA84A;
-  margin-bottom: 1rem;
+p {
+    color: #2BA84A; /* Couleur verte du logo */
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC72C; /* Couleur jaune du logo */
+    color: #1A1A1A; /* Couleur noire pour le texte */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.product {
-  background-color: #FFFFFF;
-  padding: 1rem;
-  border: 1px solid #DDD;
-  border-radius: 8px;
-  transition: transform 0.2s;
-}
-
-.product:hover {
-  transform: scale(1.05);
-}
-
-footer {
-  background-color: #1A1A1A;
-  color: #FFFFFF;
-  padding: 1rem;
-  margin-top: 2rem;
+.btn:hover {
+    background-color: #E5A900;
 }
