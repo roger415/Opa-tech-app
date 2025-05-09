@@ -1,71 +1,53 @@
-/* Styles généraux */
 body {
-    font-family: 'Poppins', sans-serif; /* Typographie selon la charte */
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    color: #2BA84A; /* Vert de votre charte */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #1A1A1A;
+  text-align: center;
 }
 
-/* Conteneur principal */
-.container {
-    max-width: 600px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+header {
+  background-color: #D72638;
+  padding: 2rem;
+  color: #FFFFFF;
 }
 
-/* Titre principal */
-h1 {
-    color: #D72638; /* Rouge de votre charte */
-    font-size: 2rem;
-    margin-bottom: 10px;
+header .logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
 }
 
-/* Message de développement */
-.development-message {
-    font-size: 1.2rem;
-    color: #1A1A1A; /* Noir pour une bonne lisibilité */
-    margin-top: 10px;
-}
-
-/* Galerie de produits */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 20px;
+  padding: 2rem;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+.gallery h2 {
+  color: #2BA84A;
+  margin-bottom: 1rem;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
 }
 
-/* Responsivité pour mobile */
-@media (max-width: 768px) {
-    .container {
-        max-width: 90%;
-    }
+.product {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
 
-    h1 {
-        font-size: 1.5rem;
-    }
+.product:hover {
+  transform: scale(1.05);
+}
 
-    .development-message {
-        font-size: 1rem;
-    }
+footer {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  padding: 1rem;
+  margin-top: 2rem;
 }
