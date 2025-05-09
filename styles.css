@@ -1,51 +1,49 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #F3F4F6;
+    text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
 }
 
 .container {
-    max-width: 600px;
-    background-color: #fff;
-    padding: 20px;
+    background: white;
+    padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
     margin-bottom: 20px;
 }
 
 h1 {
-    color: #D72638; /* Couleur rouge vif du logo */
+    color: #D72638;
     font-size: 24px;
 }
 
 p {
-    color: #2BA84A; /* Couleur verte du logo */
+    color: #2BA84A;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FFC72C; /* Couleur jaune du logo */
-    color: #1A1A1A; /* Couleur noire pour le texte */
+    background-color: #FFC72C;
+    color: #1A1A1A;
     text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    display: inline-block;
+    transition: background 0.3s;
 }
 
 .btn:hover {
-    background-color: #E5A900;
+    background-color: #E6B800;
 }
