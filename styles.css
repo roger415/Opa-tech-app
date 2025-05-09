@@ -1,5 +1,6 @@
+/* Styles généraux */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Typographie selon la charte */
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
@@ -11,27 +12,60 @@ body {
     color: #2BA84A; /* Vert de votre charte */
 }
 
+/* Conteneur principal */
 .container {
     max-width: 600px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Titre principal */
 h1 {
     color: #D72638; /* Rouge de votre charte */
     font-size: 2rem;
+    margin-bottom: 10px;
 }
 
+/* Message de développement */
 .development-message {
     font-size: 1.2rem;
+    color: #1A1A1A; /* Noir pour une bonne lisibilité */
     margin-top: 10px;
 }
 
+/* Galerie de produits */
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsivité pour mobile */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .development-message {
+        font-size: 1rem;
+    }
 }
