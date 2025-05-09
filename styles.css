@@ -1,68 +1,66 @@
-/* Reset des marges et du padding */
+/* Styles de base */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
+    color: #1A1A1A;
+}
+
+/* Section principale */
+.hero-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.card {
-    background-color: #ffffff;
-    padding: 20px 30px;
-    border-radius: 15px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom right, #FFFFFF, #f0f0f5);
     text-align: center;
-    max-width: 400px;
+    padding: 0 20px;
 }
 
-.logo {
-    width: 120px;
-    margin-bottom: 15px;
+/* Logo */
+.logo-large {
+    width: 150px;
+    max-width: 20%;
+    margin-bottom: 20px;
     transition: transform 0.3s;
 }
 
-.logo:hover {
-    transform: scale(1.1);
+.logo-large:hover {
+    transform: scale(1.05);
 }
 
-h1 {
-    font-size: 24px;
+/* Titre principal */
+.main-title {
+    font-size: 32px;
     color: #D72638;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
-.highlight {
-    color: #FFC72C;
-}
-
-.description {
-    font-size: 16px;
+/* Sous-titre */
+.subtitle {
+    font-size: 18px;
     color: #2BA84A;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-.btn {
+/* Bouton CTA (Call to Action) */
+.cta-button {
+    display: inline-block;
     background-color: #FFC72C;
     color: #1A1A1A;
     text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.btn:hover {
+.cta-button:hover {
     background-color: #E0AC1C;
-    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
