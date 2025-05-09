@@ -1,66 +1,68 @@
-/* Styles de base */
-body, html {
+/* Styles généraux */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f9;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
     color: #1A1A1A;
 }
 
-/* Section principale */
-.hero-section {
+/* Conteneur principal */
+.container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, #FFFFFF, #f0f0f5);
+    background-color: #f0f2f5;
+}
+
+/* Carte de présentation */
+.card {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 0 20px;
+    max-width: 400px;
 }
 
 /* Logo */
-.logo-large {
+.logo {
     width: 150px;
-    max-width: 20%;
+    height: auto;
     margin-bottom: 20px;
     transition: transform 0.3s;
 }
 
-.logo-large:hover {
+.logo:hover {
     transform: scale(1.05);
 }
 
-/* Titre principal */
-.main-title {
-    font-size: 32px;
+/* Texte de bienvenue */
+.brand-name {
     color: #D72638;
-    margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-/* Sous-titre */
-.subtitle {
-    font-size: 18px;
+.description {
     color: #2BA84A;
-    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 /* Bouton CTA (Call to Action) */
-.cta-button {
+.btn {
     display: inline-block;
+    padding: 12px 20px;
     background-color: #FFC72C;
     color: #1A1A1A;
     text-decoration: none;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: 600;
-    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #E0AC1C;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+.btn:hover {
+    background-color: #D72638;
+    color: #fff;
 }
