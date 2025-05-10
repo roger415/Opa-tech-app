@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const gallery = document.querySelector(".gallery");
     products.forEach(product => {
         const productCard = document.createElement("div");
+        productCard.classList.add("product-card");
         productCard.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
             <p>${product.name}</p>
